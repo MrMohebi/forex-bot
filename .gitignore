@@ -1,6 +1,6 @@
 # exclude compiled files
-.ex4
+*.ex4
 
 
 # dont know what they are !
-.dat
+*.dat
