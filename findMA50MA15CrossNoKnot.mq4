@@ -17,7 +17,7 @@ void OnTick(){
    
    string signal;
    int currentCandelNum = iBars(_Symbol,_Period);
-   if( MathAbs(MAEx15_notKnot - MA50_notKnot) > _Point * 60){
+   if( MathAbs(MAEx15_notKnot - MA50_notKnot) > _Point * 70){
       if((MA50_1 > MAEx15_1) && (MA50_2 < MAEx15_2)){
          signal = "sell";
          ObjectCreate("smallLowArrow"+currentCandelNum,OBJ_ARROW_DOWN,0,Time[0], High[0]);      
